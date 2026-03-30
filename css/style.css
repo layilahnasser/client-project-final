@@ -1,0 +1,543 @@
+body {
+  font-family: "Playfair Display", "Montserrat", serif;
+  background-color: #00274C;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.5;
+}
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -100px;
+  background: #ffcb05;
+  color: #00274c;
+  padding: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  left: 10px;
+  z-index: 3000;
+  transition: top 0.3s ease-in-out;
+}
+.skip-link:focus{
+ top: 0.75rem;
+  outline: 3px solid #00274c;
+  position: absolute;
+  top: 27px;
+
+}
+header {
+  color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 0.35rem solid #ffcb05;
+}
+a {
+  color: #ffffff;
+}
+
+header img
+{
+  max-width: 50px;
+  max-height: fit-content;
+}
+
+.nav-bar {
+  padding: 0;
+  min-height: 0;
+  border: none;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / -1;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ffcb05;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  padding: 0;
+  margin: 1rem;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #00274C;
+  padding:0.91rem;
+  font-weight: bold;
+  border: 2px solid #00274C;
+  min-height: 0px;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #ffcb05;
+  color: #00274C;
+  outline: 3px  solid transparent;
+}
+.active {
+text-decoration: underline #ffcb05;
+}
+main {
+  padding: 1rem;
+}
+
+.introduction {
+  background: #f7f9fb;
+  border: 2px solid #00274C;
+  border-left: 0.3rem solid #00274C;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+ align-items: start;
+}
+
+.card {
+  background-color: #ffffff;
+
+  border-radius: 1px;
+  padding: 1rem;
+  min-height: 12rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #00274C;
+}
+.card-maize {
+  border-top: 0.4rem solid #ffcb05;
+  background-color: #fffbea;
+}
+.card-blue {
+  border-top: 0.4rem solid #00274C;
+  background-color: #f7f9fb;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  min-height: 125px;
+  padding: 20px;
+  border: 3px solid #ffffff;
+}
+
+
+footer {
+  background: linear-gradient(to right,
+    #000000 0%,
+    #00274C 25%,
+    #03185e81 70%,
+    #000000 100%
+  );
+  border: 5px solid #ffffff;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    line-height: 1.75;
+  }
+
+:root {
+  --um-blue: #00274C;
+  --um-maize: #FFCB05;
+  --page-bg: #F8F9FB;
+  --card-bg: #FFFFFF;
+  --soft-blue: #EAF1F8;
+  --text-main: #102A43;
+  --border: #C9D6E3;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-main);
+}
+
+header,
+nav,
+footer {
+  background-color: var(--um-blue);
+}
+
+header h1,
+nav a,
+footer,
+footer p,
+footer a {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: var(--um-maize);
+}
+
+a {
+  color: var(--um-blue);
+  text-underline-offset: 0.18rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--um-blue);
+}
+
+.skip-link:focus,
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--um-maize);
+  outline-offset: 3px;
+}
+
+.page-grid section,
+.page-grid article,
+.page-grid .full-width,
+.page-grid .two-col,
+#portfolio-on-resume,
+#finding-internships article,
+#ways-to-connect article,
+#internships-umsi > section,
+#networking-umsi > section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 39, 76, 0.06);
+}
+
+.page-grid > img,
+header img {
+  border-radius: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--um-blue);
+  text-decoration-color: #F8F9FB;
+}
+
+h2 {
+  border-bottom: 4px solid var(--um-maize);
+  padding-bottom: 0.45rem;
+  display: inline-block;
+}
+
+iframe {
+  border: 0;
+  border-radius: 18px;
+  width: 100%;
+}
+
+#peer-mentor-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background-color: var(--soft-blue);
+}
+
+#peer-mentor-form input,
+#peer-mentor-form select,
+#peer-mentor-form textarea {
+  border: 1px solid #8AA0B6;
+  border-radius: 10px;
+  padding: 0.8rem;
+  background-color: #FFFFFF;
+  color: var(--text-main);
+}
+
+#peer-mentor-form button,
+nav a.active,
+.button-link {
+  background-color: var(--um-blue);
+  color: #FFFFFF;
+  border: 2px solid var(--um-blue);
+  border-radius: 999px;
+}
+
+#peer-mentor-form button:hover,
+#peer-mentor-form button:focus,
+.button-link:hover,
+.button-link:focus {
+  background-color: #FFFFFF;
+  color: var(--um-blue);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    line-height: 1.75;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.85rem;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 0.95rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  header {
+    padding: 2.5rem 2rem 2rem 2rem;
+  }
+
+  header h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .page-grid {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .page-grid > img,
+  .page-grid > section:first-of-type,
+  .page-grid > .full-width,
+  .page-grid > #internships-umsi,
+  .page-grid > #networking-umsi {
+    grid-column: 1 / -1;
+  }
+
+  .page-grid > img {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+  }
+
+  .page-grid section,
+  .page-grid article,
+  .page-grid .full-width,
+  .page-grid .two-col,
+  #portfolio-on-resume,
+  #finding-internships article,
+  #ways-to-connect article,
+  #internships-umsi > section,
+  #networking-umsi > section {
+    padding: 1.4rem;
+  }
+
+  section[aria-labelledby="career-video-heading"] {
+    grid-column: 1 / 5;
+  }
+
+  section[aria-labelledby="why-use-heading"] {
+    grid-column: 5 / 9;
+  }
+
+  section[aria-labelledby="start-here-heading"],
+  section[aria-labelledby="connect-with-cdo-heading"],
+  section[aria-labelledby="explore-more-heading"] {
+    grid-column: 1 / -1;
+  }
+
+  section[aria-labelledby="start-here-heading"] > div:first-of-type {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 1.25rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  section[aria-labelledby="start-here-heading"] > div:last-of-type ul,
+  section[aria-labelledby="why-use-heading"] ul,
+  section[aria-labelledby="explore-more-heading"] ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem 1.25rem;
+  }
+
+  #internships-umsi,
+  #networking-umsi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  #internships-umsi > header,
+  #internships-umsi > #finding-internships,
+  #internships-umsi > #peer-mentor-form,
+  #networking-umsi > header,
+  #networking-umsi > #ways-to-connect {
+    grid-column: 1 / -1;
+  }
+
+  #finding-internships,
+  #ways-to-connect {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .page-grid > .two-col {
+    min-height: 100%;
+  }
+
+  #portfolio-on-resume ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem 1.4rem;
+  }
+
+  #peer-mentor-form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem 1rem;
+    padding: 1.25rem;
+  }
+
+  #peer-mentor-form legend,
+  #peer-mentor-form label[for="meeting-topic"],
+  #peer-mentor-form textarea,
+  #peer-mentor-form button,
+  #peer-mentor-form p {
+    grid-column: 1 / -1;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 3rem 2rem 2.25rem 2rem;
+  }
+
+  header h1 {
+    font-size: 3.1rem;
+    max-width: 1000px;
+  }
+
+  .page-grid {
+    max-width: 1280px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 2.5rem 2rem 3rem 2rem;
+  }
+
+  .page-grid > img {
+    grid-column: 1 / 6;
+    max-height: 500px;
+  }
+
+  .page-grid > section:first-of-type:not(.full-width) {
+    grid-column: 6 / 13;
+  }
+
+  main.page-grid > section[aria-labelledby="central-hub-heading"] {
+    grid-column: 1 / 5;
+  }
+
+  main.page-grid > section[aria-labelledby="career-video-heading"] {
+    grid-column: 5 / 13;
+  }
+
+  main.page-grid > section[aria-labelledby="why-use-heading"] {
+    grid-column: 1 / 5;
+  }
+
+  main.page-grid > section[aria-labelledby="start-here-heading"] {
+    grid-column: 5 / 13;
+  }
+
+  main.page-grid > section[aria-labelledby="connect-with-cdo-heading"] {
+    grid-column: 1 / 5;
+  }
+
+  main.page-grid > section[aria-labelledby="explore-more-heading"] {
+    grid-column: 5 / 13;
+  }
+
+  .page-grid > #internships-umsi {
+    grid-column: 5 / 13;
+    gap: 1.75rem 2rem;
+  }
+
+  .page-grid > #networking-umsi {
+    grid-column: 4 / 13;
+    gap: 1.75rem 2rem;
+  }
+
+  .page-grid > section:nth-of-type(2) {
+    grid-column: 1 / 5;
+  }
+
+  .page-grid > .full-width:first-of-type {
+    grid-column: 1 / -1;
+  }
+
+  .page-grid > .two-col:nth-of-type(2) {
+    grid-column: 1 / 6;
+  }
+
+  .page-grid > .two-col:nth-of-type(3) {
+    grid-column: 6 / 13;
+  }
+
+  .page-grid > .two-col:nth-of-type(4) {
+    grid-column: 1 / 6;
+  }
+
+  .page-grid > .full-width:last-of-type {
+    grid-column: 6 / 13;
+  }
+
+  iframe {
+    min-height: 480px;
+  }
+
+  section[aria-labelledby="start-here-heading"] > div:first-of-type {
+    grid-template-columns: 280px 1fr;
+  }
+}
