@@ -11,7 +11,7 @@
 <body>
 
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
-
+<!-- 
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,23 +19,31 @@
             <li><a class="active" href="networking.html">Networking</a></li>
             <li><a href="internshipsearch.html">Internships</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <header>
+                    <nav class="navigation">
+        <ul class="navigation-list">
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="index.html">Home</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="resume.html">Resumes</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor active" href="networking.html">Networking</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="internshipsearch.html">Internships</a></li>
+        </ul>
+    </nav>
         <h1>Welcome to the Networking Page</h1>
     </header>
 
-    <main id="main-content" class="page-grid">
+<main id="main-content" class="page-grid">
 
         <img src="images/UMSI_MastersOrientation_081825_06.jpg" alt="Networking Event">
 
         <section>
             <h2>Most Popular Resources</h2>
             <ul>
-                <li><a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank" rel="noopener noreferrer">Attend a Networking Event</a></li>
-                <li><a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Networking Tips</a></li>
-                <li><a href="https://docs.google.com/presentation/d/15n-XqsFEntdbkZz89K-ohf7Or1NnCt5CQNDG-6fh2a0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Informational Interview Guide</a></li>
-                <li><a href="https://si-umich.12twenty.com/Login" target="_blank" rel="noopener noreferrer">Career Link: UMSI’s Exclusive Career Portal</a></li>
+                <li><a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank">Attend a Networking Event</a></li>
+                <li><a href="https://docs.google.com/document/d/18HMt79BU8ovGf9z7_P7No5tuwUS6qHNW5u0sgrepLtE/edit?usp=sharing" target="_blank">Networking Tips</a></li>
+                <li><a href="https://docs.google.com/presentation/d/15n-XqsFEntdbkZz89K-ohf7Or1NnCt5CQNDG-6fh2a0/edit?usp=sharing" target="_blank">Informational Interview Guide</a></li>
+                <li><a href="https://si-umich.12twenty.com/Login" target="_blank">Career Link: UMSI’s Exclusive Career Portal</a></li>
             </ul>
         </section>
 
@@ -120,19 +128,15 @@
 
         </section>
     </main>
+<footer>
+  <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
+  <p>Phone: (123) 456-7890 | Address: 500 S State St, Ann Arbor, MI 48109</p>
+  <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+</footer>
 
-    <footer>
-      <p>&copy; <span id="year"></span> University of Michigan School of Information</p>
-      <p>Phone: (123) 456-7890 | Address: 500 S State St, Ann Arbor, MI 48109</p>
-      <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
-    </footer>
-
-    <script>
-      const year = document.getElementById("year");
-      if (year) {
-        year.textContent = new Date().getFullYear();
-      }
-    </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

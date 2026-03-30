@@ -12,19 +12,28 @@
 
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
-    <nav aria-label="Main navigation">
+    <!-- <nav aria-label="Main navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resumes</a></li>
-            <li><a href="networking.html">Networking</a></li>
-            <li><a class="active" href="internshipsearch.html">Internships</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="networking.html">Networking</a></li>
+                <li><a class="active" href="internshipsearch.html">Internships</a></li>
+        </ul>
+    </nav> -->
+    <header>
+            <nav class="navigation">
+        <ul class="navigation-list">
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="index.html">Home</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="resume.html">Resumes</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor" href="networking.html">Networking</a></li>
+            <li class="navigation-list-item"><a class="navigation-list-item-anchor active" href="internshipsearch.html">Internships</a></li>
         </ul>
     </nav>
 
-    <header>
+        </ul>
+    </nav>
         <h1>Welcome to the Internship Search Page</h1>
     </header>
-
     <main id="main-content" class="page-grid">
 
         <img src="images/umsi_careerfair.1.26.2313.jpg" alt="Students attending the UMSI career fair">
@@ -165,42 +174,42 @@
                     Want extra support during your internship search? Use this form to request time with a peer mentor.
                 </p>
 
-                <form action="https://formspree.io/f/mbdzwzbn" method="POST">
-                    <fieldset>
-                        <legend>Peer Mentor Meeting Request</legend>
+                <form action="https://formspree.io/f/mbdzwzbn" method="POST" autocomplete="on">
+    <fieldset>
+        <legend>Peer Mentor Meeting Request</legend>
 
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
 
-                        <label for="email">University Email</label>
-                        <input type="email" id="email" name="email" required>
+        <label for="email">University Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
 
-                        <label for="program">Program</label>
-                        <input type="text" id="program" name="program">
+        <label for="program">Program</label>
+        <input type="text" id="program" name="program" autocomplete="organization-title">
 
-                        <label for="meeting-topic">What would you like help with?</label>
-                        <textarea id="meeting-topic" name="meeting-topic" rows="4" required></textarea>
+        <label for="meeting-topic">What would you like help with?</label>
+        <textarea id="meeting-topic" name="meeting-topic" rows="4" autocomplete="off" required></textarea>
 
-                        <label for="preferred-date">Preferred Date</label>
-                        <input type="date" id="preferred-date" name="preferred-date" required>
+        <label for="preferred-date">Preferred Date</label>
+        <input type="date" id="preferred-date" name="preferred-date" autocomplete="off" required>
 
-                        <label for="preferred-time">Preferred Time</label>
-                        <input type="time" id="preferred-time" name="preferred-time" required>
+        <label for="preferred-time">Preferred Time</label>
+        <input type="time" id="preferred-time" name="preferred-time" autocomplete="off" required>
 
-                        <label for="format">Meeting Format</label>
-                        <select id="format" name="format" required>
-                            <option value="">Please select an option</option>
-                            <option value="virtual">Virtual</option>
-                            <option value="in-person">In Person</option>
-                            <option value="either">Either</option>
-                        </select>
+        <label for="format">Meeting Format</label>
+        <select id="format" name="format" autocomplete="off" required>
+            <option value="">Please select an option</option>
+            <option value="virtual">Virtual</option>
+            <option value="in-person">In Person</option>
+            <option value="either">Either</option>
+        </select>
 
-                        <label for="notes">Additional Notes</label>
-                        <textarea id="notes" name="notes" rows="4"></textarea>
+        <label for="notes">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4" autocomplete="off"></textarea>
 
-                        <button type="submit">Submit Request</button>
-                    </fieldset>
-                </form>
+        <button type="submit">Submit Request</button>
+    </fieldset>
+</form>
             </section>
 
         </section>
